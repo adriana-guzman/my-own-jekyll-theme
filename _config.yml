@@ -2,8 +2,19 @@
 title: #title
 description: #"My first theme for Jekyll"
 
-baseurl: #
+baseurl: "/"
+url: "https:elsalizette-dev.github.io"
 markdown: kramdown
+
+
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+  
 permalink: /:title
 
 # Default values
