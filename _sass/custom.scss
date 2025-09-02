@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+
+  gap: 0px;
+  padding: 0px;
+  background-color:#f7efe2;
+  height:100vh;
+
+}
+
+.grid-container > div
+{
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item-header
+{
+  grid-area: header;
+  text-align: center;
+  background-image: linear-gradient(#800080, #f7efe2);
+}
+
+.item-header > h1
+{
+  font-size: 40px;
+}
+
+.left-section
+{
+  grid-area: menu;
+  min-width:20%;
+}
+
+.left-section ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-section li
+{
+  padding: 8px;
+  margin-bottom: 7px;
+}
+
+
+
+.item-main
+{
+  grid-area: main;
+}
+
+.item-main > h1
+{
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item-main > p
+{
+  margin-bottom: 7px;
+}
+
+.right-section
+{
+  grid-area: right;
+  padding: 15px;
+  color:#B3212A;
+}
+
+.right-section > h2
+{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right-section ul
+{
+     list-style-type: none;
+}
+
+.right-section li
+{
+  padding: 5px;
+  margin-bottom: 5px;
+
+}
+
+.right-section li:hover
+{
+}
+
+.right-section a, .right-section a:visited
+{
+  text-decoration:none;
+}
+
+.right-section a:hover
+{
+    font-weight: bold;
+}
+
+
+.item-footer {
+  grid-area: footer;
+  text-align: center;
+  background-image: linear-gradient(#f7efe2,#800080);
+}
+
+
+div.leyenda {
+
+font-size:18pt;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .item-header {grid-area: 1 / span 6;}
+  .left-section {grid-area: 2 / span 6;}
+  .item-main {grid-area: 3 / span 6;}
+  .right-section {grid-area: 4 / span 6;}
+  .item-footer {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 600px) {
+  .item-header {grid-area: 1 / span 6;}
+  .left-section {grid-area: 2 / span 1;}
+  .item-main {grid-area: 2 / span 4;}
+  .right-section {grid-area: 3 / span 6;}
+  .item-footer {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .item-header {grid-area: 1 / span 6;}
+  .left-section {grid-area: 2 / span 1;}
+  .item-main {grid-area: 2 / span 4;}
+  .right-section {grid-area: 2 / span 1;}
+  .item-footer {grid-area: 3 / span 6;}
+}
+

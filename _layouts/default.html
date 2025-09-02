@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+    <div id="wrap">
+
+    <div class="grid-container">
+
+        {% include header.html %}
+
+        <div class="item-main">
+            <div class="content">
+                  <div id="container">
+              <main>
+                {{ content }}
+                </main>
+                </div>
+            </div>
+        </div>
+
+        {% include posts.html %}
+
+        {% include footer.html %}
+
+    </div>
+
+</body>
+</html>

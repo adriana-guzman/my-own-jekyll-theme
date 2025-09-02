@@ -1,0 +1,23 @@
+# Site settings
+title: my-own-jekyll-theme
+description: "My first theme for Jekyll"
+
+# Build settings
+baseurl: /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+
+# Options
+reverse: false

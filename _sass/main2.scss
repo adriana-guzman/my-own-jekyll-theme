@@ -1,0 +1,41 @@
+// ----------- main.css ---------------//
+
+body
+{
+    background-color:#f7efe2;
+    color:#6c6c6c;
+    font-size:20pt;
+}
+
+
+img.logo
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+div.content{
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+
+div.carta, h1, h2, h3, h4, h5, h6
+{
+    width: 75%;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    text-align:center;
+    color:#B3212A;
+}
+
+div.carta
+{
+    font-size:16pt;
+}
+
